@@ -1,0 +1,9 @@
+/* Display borders on everything while designing */
+* {
+  border: 1px solid blue;
+}
+
+/* Get rid of default margings */
+body {
+  margin: 0;
+}
