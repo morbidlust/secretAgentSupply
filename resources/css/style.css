@@ -72,3 +72,16 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
+
+/* Nav menu */
+
+nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+}
+
+nav span {
+  padding: 0.75rem 0;
+  flex-grow: 1;
+}
