@@ -15,15 +15,20 @@ body {
   color: white;
 }
 
+/* Header */
 #header {
   background-color: black;
   display: flex;
   justify-content: center;
 }
 
-#header .container {
+/* Set width for all "containers" */
+.container {
   width: 960px;
   display: flex;
+}
+
+#header .container {
   align-items: center;
 }
 
@@ -35,4 +40,36 @@ body {
 
 #header .container h2 {
   padding: 0.66rem 0;
+}
+
+/* Banner */
+#banner {
+  display: flex;
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+#arrival {
+  width: 20rem;
+  background-color: black;
+  margin-top: 9rem;
+}
+
+#arrival h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  margin-left: 3rem;
+}
+
+#arrival h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 3rem;
 }
