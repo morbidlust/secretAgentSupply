@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: Helvetica;
   color: white;
+  width: 100%;
 }
 
 /* Header */
@@ -57,19 +58,17 @@ body {
   width: 20rem;
   background-color: black;
   margin-top: 9rem;
+  padding: 2rem 3rem;
+  align-self: flex-start;
 }
 
 #arrival h4 {
   font-size: 1rem;
   font-weight: bold;
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: 0.25rem;
-  margin-left: 3rem;
+  padding-bottom: 0.25rem;
 }
 
 #arrival h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 3rem;
 }
