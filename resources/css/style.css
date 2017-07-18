@@ -146,3 +146,12 @@ nav .container span {
   color: white;
   padding: 1rem 2rem;
 }
+
+/* Footer */
+footer {
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
