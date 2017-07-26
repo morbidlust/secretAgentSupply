@@ -1,8 +1,3 @@
-/* Display borders on everything while designing */
-* {
-  border: 1px solid blue;
-}
-
 /* Set base font size */
 html {
   font-size: 18px;
@@ -14,6 +9,14 @@ body {
   font-family: Helvetica;
   color: white;
   width: 100%;
+}
+
+.full {
+  display: inline;
+}
+
+.mobile {
+  display: none;
 }
 
 /* Header */
@@ -114,14 +117,15 @@ nav .container span {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 3rem;
-  width: 30%
-
+  width: 30%;
 }
 
 .item img {
-  display: block;
-  height: 9rem;
+  display: inline-block;
   margin: 2rem;
+  height: 9rem;
+  max-width: 9rem;
+  align-self: center;
 }
 
 .item span {
@@ -154,4 +158,75 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .full, .glasses {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  nav .container {
+    justify-content: center;
+  }
+
+  .item {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /* Banner */
+  #banner {
+    height: 15rem;
+  }
+
+  #arrival {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  #arrival h4 {
+    font-size: 0.77rem;
+  }
+
+  #arrival h1 {
+    font-size: 1rem;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  #items {
+    justify-content: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #location, #hours {
+    width: 90%;
+    margin-bottom: .5rem;
+    align-self: center;
+  }
+
+  /* Center copyright info in footer */
+  footer .container {
+    justify-content: center;
+  }
 }
